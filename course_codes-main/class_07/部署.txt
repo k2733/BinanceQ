@@ -1,0 +1,19 @@
+## step 1 新建虚拟环境(指定python版本：修改-3为目标版本)
+
+py -3.9 -m venv .venv
+.venv\scripts\activate
+#升级pip
+        d:\githubclone\binanceq\.venv\scripts\python.exe -m pip install --upgrade pip  
+或者    python.exe -m pip install --upgrade pip 
+##豆瓣源 -i https://pypi.douban.com/simpl
+pip install -r requirements.txt    #导入需要的包
+pip freeze > requirements.txt     #导出当前环境所有包
+
+## step 2 安装howtrader
+
+pip install git+https://github.com/51bitquant/howtrader.git
+
+
+## step 3 创建howtrader文件夹
+
+在项目下面创建一个文件夹howtrader，该文件夹主要是存放log日志和配置文件的
